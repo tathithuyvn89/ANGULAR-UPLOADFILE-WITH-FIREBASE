@@ -1,0 +1,10 @@
+<div>
+  <label>Chon anh dai dien</label>
+  <div class="input-group">
+    <div class="custom-file">
+      <input type="file" id="avatar" #fileUploader (change)="showPreview($event)">
+      <label>Chose  file</label>
+    </div>
+  </div>
+  <img [src]="imgSrc" alt="anh dai dien" (click)="fileUploader.click()" height="125" width="100" />
+</div>
